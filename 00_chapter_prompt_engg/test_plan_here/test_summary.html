@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VWO Login Test Summary</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 32px;
+        color: #1f2937;
+      }
+      h1, h2 {
+        color: #111827;
+      }
+      .metrics {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 20px 0;
+      }
+      .card {
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        padding: 16px 20px;
+        min-width: 140px;
+        background: #f9fafb;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 16px;
+      }
+      th, td {
+        border: 1px solid #d1d5db;
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        background: #eef2ff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>VWO Login Test Summary</h1>
+    <p><strong>Environment:</strong> app.vwo.com / login feature</p>
+
+    <div class="metrics">
+      <div class="card">
+        <strong>Total tests</strong><br />4
+      </div>
+      <div class="card">
+        <strong>Passed</strong><br />0
+      </div>
+      <div class="card">
+        <strong>Failed</strong><br />0
+      </div>
+      <div class="card">
+        <strong>Blocked</strong><br />0
+      </div>
+      <div class="card">
+        <strong>Pass rate</strong><br />0%
+      </div>
+    </div>
+
+    <h2>Execution Status</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>TC_ID</th>
+          <th>Test Case</th>
+          <th>Priority</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>TC-LOGIN-01</td>
+          <td>Successful login with valid credentials</td>
+          <td>P0</td>
+          <td>Not executed</td>
+        </tr>
+        <tr>
+          <td>TC-LOGIN-02</td>
+          <td>Invalid login attempts show errors and block access</td>
+          <td>P0</td>
+          <td>Not executed</td>
+        </tr>
+        <tr>
+          <td>TC-LOGIN-03</td>
+          <td>Required field and length validation</td>
+          <td>P1</td>
+          <td>Not executed</td>
+        </tr>
+        <tr>
+          <td>TC-LOGIN-04</td>
+          <td>Password reset, remember-me, and session expiry checks</td>
+          <td>P1</td>
+          <td>Not executed</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Notes</h2>
+    <ul>
+      <li>Execution is pending approved QA credentials and a stable test environment.</li>
+      <li>Real application locators and exact error messages should be validated before running automation in the target environment.</li>
+    </ul>
+  </body>
+</html>

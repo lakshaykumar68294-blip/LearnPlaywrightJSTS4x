@@ -1,0 +1,1 @@
+Create TestPlan [text](<../../Playwright_JS_TS notes/04_RICE_POT_Generic_QA_Template.md>), We want to create a test plan by using this port generic template
