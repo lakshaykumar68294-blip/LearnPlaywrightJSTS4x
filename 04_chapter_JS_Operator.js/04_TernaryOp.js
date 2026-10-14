@@ -9,6 +9,6 @@ console.log(can_go_to_goa);
 let eligiblity = age > 18 ? " can vote" : " no cannot vote";
 console.log(eligiblity);
 
-// NESTED TERNARY
+
 
 
