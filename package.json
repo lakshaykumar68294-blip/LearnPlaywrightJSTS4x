@@ -1,5 +1,26 @@
 {
+  "name": "learnjstsplaywright4x",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/lakshaykumar68294-blip/LearnPlaywrightJSTS4x#readme",
+  "bugs": {
+    "url": "https://github.com/lakshaykumar68294-blip/LearnPlaywrightJSTS4x/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lakshaykumar68294-blip/LearnPlaywrightJSTS4x.git"
+  },
+  "license": "ISC",
+  "author": "lakshay",
+  "type": "commonjs",
+  "main": "04_chapter_JS_Operator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "eslint": "^10.12.0"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
   }
 }
