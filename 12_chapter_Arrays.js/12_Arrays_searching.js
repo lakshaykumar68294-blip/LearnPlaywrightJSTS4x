@@ -1,4 +1,4 @@
-let result = ["pass","fail","error","fail","pass"];
+let result = ["pass","fail","error","skip","fail","pass"];
 
 //indexOf()
 
@@ -6,12 +6,13 @@ let result = ["pass","fail","error","fail","pass"];
 // return index of first occurence of value you passed
 
 
-//console.log(result.indexOf("fail"));// 2
+//console.log(result.indexOf("fail"));// 1
 //console.log(result.indexOf("skip")); //-1
 
 //lastindexOf()
 
-// search from LEFT to RIGHT(E to B)
+// search from RIGHT to LEFT (E to B)
+// it return index counted from left that is from 0
 // return index of last occurence of value you passed
 console.log(result.lastIndexOf("fail"));
 console.log(result.lastIndexOf("pass"));

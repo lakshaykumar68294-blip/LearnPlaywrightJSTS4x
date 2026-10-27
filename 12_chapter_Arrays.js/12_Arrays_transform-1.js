@@ -1,6 +1,6 @@
 // map()
 
-// Transform existing array into new array ofsame size 
+// Transform existing array into new array of same size
 // It maps each item and apply logic on each item and store them in a new array 
 // --- DOESNOT change original array---
 
