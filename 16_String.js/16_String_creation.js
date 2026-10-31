@@ -1,5 +1,7 @@
 // ## Creating Strings ##
 
+// ***** Strings are "IMMUTABLE"---> every string method gives a new string
+
 let url = "https://app.vwo.com";
 let status = 'pass';
 let message = `Test completed in ${320} ms`;  // template literal

@@ -15,4 +15,3 @@ console.log(url.indexOf("a"));
 console.log(url.lastIndexOf("a"));
 console.log(url.indexOf("nothere"));
 
-// ASCII -> A -> 65

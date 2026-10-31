@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript Objects: Copy by Reference</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #172033;
+      background: #f3f6fb;
+    }
+
+    body {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+      line-height: 1.6;
+    }
+
+    h1, h2 { line-height: 1.2; }
+    h1 { color: #193b70; }
+    .card {
+      margin: 20px 0;
+      padding: 22px;
+      border: 1px solid #d9e2f0;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 4px 14px #1a365008;
+    }
+
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 8px;
+      color: #e8efff;
+      background: #172033;
+      font-size: 15px;
+    }
+
+    code { font-family: Consolas, "Courier New", monospace; }
+    .diagram {
+      display: grid;
+      grid-template-columns: minmax(100px, 1fr) 1.4fr minmax(180px, 1.5fr);
+      align-items: center;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .name, .object {
+      padding: 14px;
+      border: 2px solid #8bb5f0;
+      border-radius: 10px;
+      background: #eef5ff;
+      text-align: center;
+    }
+
+    .object {
+      border-color: #e7ae54;
+      background: #fff7e8;
+    }
+
+    .arrow {
+      color: #426a9f;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .result {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      color: #155b38;
+      background: #e6f7ed;
+      font-weight: 700;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 22px 14px 40px; }
+      .diagram { grid-template-columns: 1fr; }
+      .arrow { transform: rotate(90deg); }
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Objects: Copy by Reference</h1>
+  <p>
+    In this example, <code>aa</code> and <code>bb</code> point to the
+    <strong>same object</strong>. Assigning an object variable to another
+    variable does not make a separate copy of the object.
+  </p>
+
+  <section class="card">
+    <h2>The code</h2>
+    <pre><code>let aa = { status: 'pass' };
+let bb = aa;              // bb refers to the same object as aa
+bb.status = "fail";       // updates that shared object
+
+console.log(aa.status);  // "fail"</code></pre>
+  </section>
+
+  <section class="card">
+    <h2>Memory picture</h2>
+    <p>Think of <code>aa</code> and <code>bb</code> as two labels pointing to one box:</p>
+    <div class="diagram" role="img" aria-label="The variables aa and bb both point to the same object whose status is fail">
+      <div class="name"><code>aa</code></div>
+      <div class="arrow">points to →</div>
+      <div class="object"><code>{ status: "fail" }</code></div>
+      <div class="name"><code>bb</code></div>
+      <div class="arrow">also points to →</div>
+      <div class="object">same object</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Step by step</h2>
+    <ol>
+      <li><code>aa</code> is set to an object whose <code>status</code> is <code>"pass"</code>.</li>
+      <li><code>bb = aa</code> makes <code>bb</code> refer to that same object.</li>
+      <li><code>bb.status = "fail"</code> changes the shared object's property.</li>
+      <li>Reading <code>aa.status</code> sees the updated value: <span class="result">"fail"</span>.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>Want an independent object?</h2>
+    <p>
+      For this one-level object, spread syntax creates a shallow copy:
+    </p>
+    <pre><code>let aa = { status: 'pass' };
+let bb = { ...aa };
+bb.status = "fail";
+
+console.log(aa.status); // "pass"
+console.log(bb.status); // "fail"</code></pre>
+    <p>
+      A shallow copy separates the top-level object, but nested objects are
+      still shared. For the original code, the key idea is:
+      <strong>both variables refer to one object, so a property change through
+      either name is visible through the other.</strong>
+    </p>
+  </section>
+</body>
+</html>
