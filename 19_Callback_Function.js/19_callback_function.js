@@ -14,11 +14,32 @@ function greetUser(name, callback)
 // The callback function is called after greeting the user
 }
 
-function sayGoodbye()
+// ###### DIFFRENT WAYS TO DEFINE A CALLBACK FUNCTION ######
+
+// 1st Way to define a callback function ↓
+
+//
 // This is the callback function that will be passed to greetUser
+//    function sayGoodbye()
+// {
+//     console.log("Goodbye See You Later!");
+// }
+// greetUser("Alice", sayGoodbye);
+// Calling greetUser with "Alice" and the sayGoodbye function as arguments
+
+
+// 2nd Way to define a callback function ↓
+// anonymous
+
+// greetUser("Bob", function()
+// {
+//     console.log("Goodbye See You Later!");
+// });
+
+// 3rd way to define a callback function ↓
+// arrow function
+
+greetUser("Lakshay", () =>
 {
     console.log("Goodbye See You Later!");
-}
-
-greetUser("Alice", sayGoodbye);
-// Calling greetUser with "Alice" and the sayGoodbye function as arguments
+});
