@@ -1,15 +1,15 @@
-let fastServer = new Promise(function (resolve) {
+let fastServer500 = new Promise(function (resolve) {
     setTimeout(function () {
-        resolve("Fast 100ms")
-    }), 100
+        resolve("EXEC speed 500ms")
+    }, 500)
 });
 
-let slowServer = new Promise(function (resolve) {
+let slowServer100 = new Promise(function (resolve) {
     setTimeout(function () {
-        resolve("Fast 500ms")
-    }), 500
+        resolve("EXEC speed 900ms")
+    }, 900);
 });
 
-Promise.race([fastServer, slowServer]).then(function (winner) {
+Promise.race([fastServer500, slowServer100]).then(function (winner) {
     console.log("Winner:", winner);
 });
