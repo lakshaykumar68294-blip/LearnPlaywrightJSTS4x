@@ -10,9 +10,9 @@ class SBI
     {
         return this.#balance;
     }
-    setBalance(balance,is_chasier)
+    setBalance(balance,is_cashier)
     {
-        if(is_chasier)
+        if(is_cashier)
             {
                 return this.#balance = balance;
             }

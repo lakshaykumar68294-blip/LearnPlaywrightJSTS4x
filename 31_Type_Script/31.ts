@@ -1,2 +1,2 @@
-let name : String = "LAKSHAY";
-console.log(name);
+let greet : String = "Hello-TheTestingAcademy";
+console.log(greet);
