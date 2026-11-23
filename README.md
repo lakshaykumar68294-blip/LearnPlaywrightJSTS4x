@@ -527,11 +527,12 @@ The status shows that the folder has learning files. It does not mean the topic 
 3. **What does the Output part specify?** The artifact or response the prompt should produce.
 4. **What does RICE-POT stand for?** Role, Instructions, Context, Example, Parameters, Output, and Tone.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Framework**<br>RICE-POT structures a prompt. | **Context**<br>Explain the QA task. |
-|---|---|
-| **Output**<br>Name the expected deliverable. | **Quality**<br>Set limits and verify results. |
+- **Framework:** RICE-POT structures a prompt.
+- **Context:** Explain the QA task.
+- **Output:** Name the expected deliverable.
+- **Quality:** Set limits and verify results.
 
 ### Chapter 01: JavaScript basics
 
@@ -555,11 +556,12 @@ console.log("hello world,this my first JS program!");
 3. **How do you run a JavaScript file with Node.js?** Use `node path/to/file.js`.
 4. **Is `"5"` the same value as `5`?** No. One is a string and one is a number.
 
-#### Bento summary
+#### Quick interview revision
 
-| **JavaScript**<br>Code runs in Node.js. | **Output**<br>Use console.log(). |
-|---|---|
-| **Numbers**<br>Try basic arithmetic. | **Types**<br>Text and numbers differ. |
+- **JavaScript:** Code runs in Node.js.
+- **Output:** Use console.log().
+- **Numbers:** Try basic arithmetic.
+- **Types:** Text and numbers differ.
 
 ### Chapter 02: Keywords and identifiers
 
@@ -584,11 +586,12 @@ console.log("hello world,this my first JS program!");
 3. **How do you write a single-line comment?** Start it with `//`.
 4. **Can an identifier contain spaces?** No; use a valid identifier or a string key where appropriate.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Keywords**<br>Reserved words have meaning. | **Identifiers**<br>Choose valid, clear names. |
-|---|---|
-| **Comments**<br>Explain code for readers. | **Engine**<br>JavaScript executes statements. |
+- **Keywords:** Reserved words have meaning.
+- **Identifiers:** Choose valid, clear names.
+- **Comments:** Explain code for readers.
+- **Engine:** JavaScript executes statements.
 
 ### Chapter 03: Literals
 
@@ -614,11 +617,12 @@ console.log(a);
 3. **What does `null` usually represent?** An intentional absence of a value.
 4. **What is `NaN`?** A special numeric value meaning “Not-a-Number.”
 
-#### Bento summary
+#### Quick interview revision
 
-| **Literals**<br>Values written directly in code. | **Types**<br>Strings, booleans, and numbers. |
-|---|---|
-| **Absence**<br>null differs from undefined. | **Numbers**<br>BigInt and special values exist. |
+- **Literals:** Values written directly in code.
+- **Types:** Strings, booleans, and numbers.
+- **Absence:** null differs from undefined.
+- **Numbers:** BigInt and special values exist.
 
 ### Chapter 04: Operators
 
@@ -643,11 +647,12 @@ let remainder = 10 % 3; // 1
 3. **What does `&&` do?** It is true when both conditions are truthy.
 4. **What does the ternary operator do?** It chooses one of two expressions based on a condition.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Arithmetic**<br>Calculate with numeric operators. | **Compare**<br>=== checks value and type. |
-|---|---|
-| **Logic**<br>Combine conditions with && and ||. | **Choose**<br>Use a ternary for two outcomes. |
+- **Arithmetic:** Calculate with numeric operators.
+- **Compare:** === checks value and type.
+- **Logic:** Combine conditions with && and ||.
+- **Choose:** Use a ternary for two outcomes.
 
 ### Chapter 05: Increment, decrement, and related operators
 
@@ -673,11 +678,12 @@ let b = --a; // b and a are both 9
 3. **What does `??` check?** Whether the left value is `null` or `undefined`.
 4. **What happens when the left side of `??` is `0`?** The result is `0`; the fallback is used only for `null` or `undefined`.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Prefix**<br>Update before reading the value. | **Postfix**<br>Read the old value, then update. |
-|---|---|
-| **Fallback**<br>?? handles null or undefined. | **Watch out**<br>Track evaluation order carefully. |
+- **Prefix:** Update before reading the value.
+- **Postfix:** Read the old value, then update.
+- **Fallback:** ?? handles null or undefined.
+- **Watch out:** Track evaluation order carefully.
 
 ### Chapter 06: Conditions
 
@@ -703,11 +709,12 @@ let eligibility = age >= 18 ? "can drive" : "cannot drive";
 3. **When is a ternary useful?** For a short choice between two expressions.
 4. **What does an `else` branch mean?** It runs when no preceding branch was selected.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Branch**<br>if and else choose a path. | **More cases**<br>else if checks more conditions. |
-|---|---|
-| **Short choice**<br>Ternary returns one of two values. | **Boundaries**<br>Check ranges and equality edges. |
+- **Branch:** if and else choose a path.
+- **More cases:** else if checks more conditions.
+- **Short choice:** Ternary returns one of two values.
+- **Boundaries:** Check ranges and equality edges.
 
 ### Chapter 07: Switch statements
 
@@ -739,11 +746,12 @@ switch (responseCode) {
 3. **What happens without `break`?** Execution may continue into following cases.
 4. **Can a switch match strings?** Yes, case values can be strings as well as numbers.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Cases**<br>switch compares one expression. | **Break**<br>Stop unwanted fall-through. |
-|---|---|
-| **Default**<br>Handle unmatched values. | **Group**<br>Share behavior across cases. |
+- **Cases:** switch compares one expression.
+- **Break:** Stop unwanted fall-through.
+- **Default:** Handle unmatched values.
+- **Group:** Share behavior across cases.
 
 ### Chapter 08: User input
 
@@ -769,11 +777,12 @@ let num = Number(prompt("Enter a Number"));
 3. **What does `Number("abc")` return?** `NaN`.
 4. **Why might `require()` behave differently in this repository?** The root package uses ES modules, while some examples use CommonJS syntax.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Input**<br>Read text from a source. | **Convert**<br>Use Number() for numeric input. |
-|---|---|
-| **Validate**<br>Input may be empty or invalid. | **Runtime**<br>Browser and Node input differ. |
+- **Input:** Read text from a source.
+- **Convert:** Use Number() for numeric input.
+- **Validate:** Input may be empty or invalid.
+- **Runtime:** Browser and Node input differ.
 
 ### Chapter 09: For loops
 
@@ -800,11 +809,12 @@ for (let i = 0; i < 10; i++) {
 3. **When is a `for` loop useful?** When the iteration pattern or count is known.
 4. **What causes an infinite loop?** A condition that never becomes false, often due to a missing update.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Setup**<br>Initialize a counter. | **Condition**<br>Continue while the test is true. |
-|---|---|
-| **Update**<br>Move toward the stopping point. | **Bounds**<br>Check < versus <=. |
+- **Setup:** Initialize a counter.
+- **Condition:** Continue while the test is true.
+- **Update:** Move toward the stopping point.
+- **Bounds:** Check < versus <=.
 
 ### Chapter 10: While loops
 
@@ -833,11 +843,12 @@ while (i < 10) {
 3. **What must a loop eventually do to stop?** Make its condition false.
 4. **How is a `while` loop different from a `do...while` loop?** `while` checks first; `do...while` runs its body first.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Condition**<br>Checked before each iteration. | **State**<br>Change values used by the condition. |
-|---|---|
-| **Stop**<br>Use break when appropriate. | **Risk**<br>A missing update can loop forever. |
+- **Condition:** Checked before each iteration.
+- **State:** Change values used by the condition.
+- **Stop:** Use break when appropriate.
+- **Risk:** A missing update can loop forever.
 
 ### Chapter 11: Do-while loops
 
@@ -866,11 +877,12 @@ do {
 3. **When could it be useful?** When an action must happen before the first condition check.
 4. **What punctuation follows the condition?** A semicolon.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Run once**<br>Body runs before the first check. | **Condition**<br>Checked after each iteration. |
-|---|---|
-| **Use**<br>Helpful when one run is required. | **Stop**<br>Update state so the loop ends. |
+- **Run once:** Body runs before the first check.
+- **Condition:** Checked after each iteration.
+- **Use:** Helpful when one run is required.
+- **Stop:** Update state so the loop ends.
 
 ### Chapter 12: Arrays
 
@@ -896,11 +908,12 @@ let result = grades.map(item => item > 50 ? "Pass" : "Fail");
 3. **What does `filter()` return?** A new array containing items that pass the test.
 4. **Does `slice()` remove items from the original array?** No; it returns a shallow copy of a selected portion.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Index**<br>Arrays start at index zero. | **Transform**<br>map() creates mapped values. |
-|---|---|
-| **Select**<br>filter() keeps matching items. | **Methods**<br>Search, copy, slice, and sort. |
+- **Index:** Arrays start at index zero.
+- **Transform:** map() creates mapped values.
+- **Select:** filter() keeps matching items.
+- **Methods:** Search, copy, slice, and sort.
 
 ### Chapter 13: Functions
 
@@ -926,11 +939,12 @@ console.log(add(10, 10));
 3. **What does `return` do?** Sends a value back and ends that function call.
 4. **How does an expression-bodied arrow function return?** It implicitly returns its expression.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Inputs**<br>Parameters receive arguments. | **Output**<br>return sends a result back. |
-|---|---|
-| **Forms**<br>Declarations, expressions, and arrows. | **No return**<br>A missing return gives undefined. |
+- **Inputs:** Parameters receive arguments.
+- **Output:** return sends a result back.
+- **Forms:** Declarations, expressions, and arrows.
+- **No return:** A missing return gives undefined.
 
 ### Chapter 14: var, let, const, hoisting, and TDZ
 
@@ -956,11 +970,12 @@ let score = 100;
 3. **What is the TDZ?** The time before a `let` or `const` declaration is initialized.
 4. **What is a key scope difference between `var` and `let`?** `var` is function-scoped; `let` is block-scoped.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Declarations**<br>var, let, and const differ. | **Scope**<br>let and const are block-scoped. |
-|---|---|
-| **Hoisting**<br>Declarations have different behavior. | **TDZ**<br>let and const need initialization. |
+- **Declarations:** var, let, and const differ.
+- **Scope:** let and const are block-scoped.
+- **Hoisting:** Declarations have different behavior.
+- **TDZ:** let and const need initialization.
 
 ### Chapter 15: Closures
 
@@ -990,11 +1005,12 @@ function startBrowser() {
 3. **What does the chapter's outer function return?** An inner function.
 4. **Name one use for closures.** Keeping private state inside a function.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Closure**<br>Inner function remembers outer scope. | **Lifetime**<br>Outer call may already have returned. |
-|---|---|
-| **Access**<br>Closure can read captured bindings. | **Use**<br>Keep state inside a function. |
+- **Closure:** Inner function remembers outer scope.
+- **Lifetime:** Outer call may already have returned.
+- **Access:** Closure can read captured bindings.
+- **Use:** Keep state inside a function.
 
 ### Chapter 16: Strings
 
@@ -1019,11 +1035,12 @@ let message = `Test completed in ${320} ms`;
 3. **What does `.length` return?** The string's length in UTF-16 code units.
 4. **What does `charAt(index)` return for an out-of-range index?** An empty string.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Create**<br>Quotes and template literals make text. | **Immutable**<br>String methods return new values. |
-|---|---|
-| **Access**<br>Read characters by position. | **Search**<br>Check whether text contains a value. |
+- **Create:** Quotes and template literals make text.
+- **Immutable:** String methods return new values.
+- **Access:** Read characters by position.
+- **Search:** Check whether text contains a value.
 
 ### Chapter 17: Objects
 
@@ -1050,11 +1067,12 @@ config.timeout = 3000;
 3. **How do you delete an object property?** Use `delete object.key`.
 4. **Are objects copied by value or by reference in ordinary assignments?** The reference is copied, so both variables can point to the same object.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Properties**<br>Objects group named values. | **Access**<br>Use dot or bracket notation. |
-|---|---|
-| **Reference**<br>Assignment can share one object. | **Copy**<br>Spread makes a shallow copy. |
+- **Properties:** Objects group named values.
+- **Access:** Use dot or bracket notation.
+- **Reference:** Assignment can share one object.
+- **Copy:** Spread makes a shallow copy.
 
 ### Chapter 18: Multidimensional arrays
 
@@ -1080,11 +1098,12 @@ console.log(grid[0][1]); // 20
 3. **What does `grid[0].length` count?** The number of items in the first row.
 4. **Can rows have different lengths?** Yes; JavaScript arrays do not enforce a rectangular shape.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Grid**<br>Nested arrays store rows and columns. | **Indexes**<br>Use two indexes for a cell. |
-|---|---|
-| **Loops**<br>Visit rows and their values. | **Guard**<br>Check indexes before reading. |
+- **Grid:** Nested arrays store rows and columns.
+- **Indexes:** Use two indexes for a cell.
+- **Loops:** Visit rows and their values.
+- **Guard:** Check indexes before reading.
 
 ### Chapter 19: Callback functions
 
@@ -1112,11 +1131,12 @@ function greetUser(name, callback) {
 3. **Are all callbacks asynchronous?** No; a callback can run immediately or later.
 4. **What is callback hell?** Deeply nested callbacks that make flow difficult to read and maintain.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Callback**<br>Pass a function to another function. | **Timing**<br>Callbacks can be sync or async. |
-|---|---|
-| **Return**<br>Callbacks can pass results back. | **Readability**<br>Deep nesting is hard to follow. |
+- **Callback:** Pass a function to another function.
+- **Timing:** Callbacks can be sync or async.
+- **Return:** Callbacks can pass results back.
+- **Readability:** Deep nesting is hard to follow.
 
 ### Chapter 20: Promises
 
@@ -1144,11 +1164,12 @@ apiCall.then(result => console.log(result));
 3. **What does `.then()` handle?** A fulfilled value.
 4. **What does `.catch()` handle?** A rejection or an error propagated through the chain.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Promise**<br>Represents a future result. | **States**<br>Pending, fulfilled, or rejected. |
-|---|---|
-| **Handle**<br>Use then() and catch(). | **Combine**<br>all, allSettled, race, finally. |
+- **Promise:** Represents a future result.
+- **States:** Pending, fulfilled, or rejected.
+- **Handle:** Use then() and catch().
+- **Combine:** all, allSettled, race, finally.
 
 ### Chapter 21: Async and await
 
@@ -1176,11 +1197,12 @@ async function runAPIRequest() {
 3. **Does `await` block the whole JavaScript runtime?** No; it pauses that async function's continuation.
 4. **How can an awaited rejection be handled locally?** Put the `await` inside a `try` block with a `catch`.
 
-#### Bento summary
+#### Quick interview revision
 
-| **async**<br>An async function returns a Promise. | **await**<br>Wait for a value in that function. |
-|---|---|
-| **Flow**<br>Run work sequentially or in parallel. | **Reliability**<br>Handle errors and retry carefully. |
+- **async:** An async function returns a Promise.
+- **await:** Wait for a value in that function.
+- **Flow:** Run work sequentially or in parallel.
+- **Reliability:** Handle errors and retry carefully.
 
 ### Chapter 22: Import and export
 
@@ -1209,11 +1231,12 @@ export function format_name(sname) {
 3. **How do you import `BASE_URL` from this folder's utility file?** `import { BASE_URL } from "./22_test_utility_ex1.js";`
 4. **What does `"type": "module"` signal in `package.json`?** Node.js treats `.js` files in that package scope as ES modules.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Export**<br>Make values available from a module. | **Import**<br>Use named or default imports. |
-|---|---|
-| **Alias**<br>Rename an imported binding. | **Paths**<br>Match module names and file paths. |
+- **Export:** Make values available from a module.
+- **Import:** Use named or default imports.
+- **Alias:** Rename an imported binding.
+- **Paths:** Match module names and file paths.
 
 ### Chapter 23: Classes and objects
 
@@ -1242,11 +1265,12 @@ const person = new Person();
 3. **What does `new` do here?** Creates a new instance and runs its constructor if one exists.
 4. **How are class methods declared?** With a method name and body, without the `function` keyword.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Class**<br>Defines shared data and behavior. | **Instance**<br>new creates an object. |
-|---|---|
-| **Methods**<br>Methods describe object actions. | **Separate**<br>Each instance is a distinct object. |
+- **Class:** Defines shared data and behavior.
+- **Instance:** new creates an object.
+- **Methods:** Methods describe object actions.
+- **Separate:** Each instance is a distinct object.
 
 ### Chapter 24: Playwright
 
@@ -1274,11 +1298,12 @@ test('has title', async ({ page }) => {
 3. **Why use `await` with browser actions?** They are asynchronous and return Promises.
 4. **What does `toHaveTitle()` check?** That the page title matches the expected string or pattern.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Test**<br>test() defines a browser test. | **Page**<br>Use the page fixture for actions. |
-|---|---|
-| **Await**<br>Wait for browser operations. | **Assert**<br>expect() checks page state. |
+- **Test:** test() defines a browser test.
+- **Page:** Use the page fixture for actions.
+- **Await:** Wait for browser operations.
+- **Assert:** expect() checks page state.
 
 ### Chapter 25: Constructors
 
@@ -1307,11 +1332,12 @@ class APIClient {
 3. **What does `this` refer to in the constructor?** The instance being initialized.
 4. **Can a class have more than one constructor?** No; a class has one constructor method.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Constructor**<br>Runs when new creates an instance. | **Initialize**<br>Set instance properties. |
-|---|---|
-| **Static**<br>Belongs to the class itself. | **Access**<br>Public and private data differ. |
+- **Constructor:** Runs when new creates an instance.
+- **Initialize:** Set instance properties.
+- **Static:** Belongs to the class itself.
+- **Access:** Public and private data differ.
 
 ### Chapter 26: Encapsulation
 
@@ -1341,11 +1367,12 @@ class SBI {
 3. **How can outside code read a private field?** It cannot access it directly; the class can expose a public method.
 4. **Why validate a value in a setter method?** To prevent invalid state changes.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Encapsulate**<br>Keep internal state controlled. | **Private**<br># fields are class-private. |
-|---|---|
-| **Methods**<br>Expose safe ways to access state. | **Validate**<br>Reject invalid state changes. |
+- **Encapsulate:** Keep internal state controlled.
+- **Private:** # fields are class-private.
+- **Methods:** Expose safe ways to access state.
+- **Validate:** Reject invalid state changes.
 
 ### Chapter 27: Inheritance
 
@@ -1374,11 +1401,12 @@ class Son extends Father {
 3. **Can the parent call a child-only method?** No, not unless the parent defines it.
 4. **What keyword is commonly used to call a parent constructor?** `super`.
 
-#### Bento summary
+#### Quick interview revision
 
-| **extends**<br>Build a child from a parent. | **Reuse**<br>Child can call inherited methods. |
-|---|---|
-| **Override**<br>Child can replace inherited behavior. | **Mixins**<br>Compose behavior without class multiple inheritance. |
+- **extends:** Build a child from a parent.
+- **Reuse:** Child can call inherited methods.
+- **Override:** Child can replace inherited behavior.
+- **Mixins:** Compose behavior without class multiple inheritance.
 
 ### Chapter 28: Polymorphism
 
@@ -1407,11 +1435,12 @@ class APITest extends BaseTest {
 3. **What is runtime polymorphism in this example?** The subclass's `setUp()` behavior is used for an `APITest` instance.
 4. **How can a child method call the parent implementation?** Use `super.methodName()`.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Dispatch**<br>Behavior depends on the object. | **Override**<br>Subclass provides its method. |
-|---|---|
-| **JavaScript**<br>No signature-based overload selection. | **Parent**<br>super can call parent behavior. |
+- **Dispatch:** Behavior depends on the object.
+- **Override:** Subclass provides its method.
+- **JavaScript:** No signature-based overload selection.
+- **Parent:** super can call parent behavior.
 
 ### Chapter 29: Interview questions
 
@@ -1441,11 +1470,12 @@ class Bug {
 3. **What is an instance method?** A method called on an object created from a class.
 4. **What should you clarify before solving a coding question?** Inputs, expected output, constraints, and edge cases.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Practice**<br>Solve short coding exercises. | **Classes**<br>Bug example stores title and severity. |
-|---|---|
-| **Inheritance**<br>Examples use parent and child classes. | **Counter**<br>Chain methods that return this. |
+- **Practice:** Solve short coding exercises.
+- **Classes:** Bug example stores title and severity.
+- **Inheritance:** Examples use parent and child classes.
+- **Counter:** Chain methods that return this.
 
 ### Chapter 30: TypeScript introduction
 
@@ -1471,11 +1501,12 @@ console.log(greeting);
 3. **Does a TypeScript type annotation exist at runtime?** No, it is removed when TypeScript is transformed to JavaScript.
 4. **Can TypeScript run in Node.js without transformation?** Not in the general setup here; use a runner such as `ts-node` or compile it first.
 
-#### Bento summary
+#### Quick interview revision
 
-| **TypeScript**<br>JavaScript with static type checks. | **Annotation**<br>greeting is declared as string. |
-|---|---|
-| **Runtime**<br>Types are removed when transformed. | **Run**<br>Use ts-node or another TS runner. |
+- **TypeScript:** JavaScript with static type checks.
+- **Annotation:** greeting is declared as string.
+- **Runtime:** Types are removed when transformed.
+- **Run:** Use ts-node or another TS runner.
 
 ### Chapter 31: TypeScript basics
 
@@ -1502,11 +1533,12 @@ function greet(name: string): string {
 3. **What is `never` used for?** Values or code paths that do not complete normally, such as a function that always throws.
 4. **What is one risk of `any`?** It allows unchecked operations and can hide type errors.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Types**<br>Annotate primitives and arrays. | **Functions**<br>Type parameters and return values. |
-|---|---|
-| **any**<br>Avoid unchecked values where possible. | **never**<br>Marks code that cannot return normally. |
+- **Types:** Annotate primitives and arrays.
+- **Functions:** Type parameters and return values.
+- **any:** Avoid unchecked values where possible.
+- **never:** Marks code that cannot return normally.
 
 ### Chapter 32: TypeScript abstraction
 
@@ -1534,11 +1566,12 @@ interface Excetable {
 3. **What does `readonly` indicate?** A property cannot be reassigned after initialization through that type.
 4. **What is an enum useful for?** Giving readable names to a set of related values.
 
-#### Bento summary
+#### Quick interview revision
 
-| **Interface**<br>Describe a required shape. | **implements**<br>Class agrees to a contract. |
-|---|---|
-| **readonly**<br>Prevent reassignment through a type. | **Enums**<br>Give names to related values. |
+- **Interface:** Describe a required shape.
+- **implements:** Class agrees to a contract.
+- **readonly:** Prevent reassignment through a type.
+- **Enums:** Give names to related values.
 
 ## Getting started
 
